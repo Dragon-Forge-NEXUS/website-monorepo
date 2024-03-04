@@ -17,6 +17,7 @@
     "@remix-run/serve": "^2.8.0",
     "@vercel/speed-insights": "^1.0.10",
     "axios": "^1.6.7",
+    "discord.js": "^14.14.1",
     "dotenv": "^16.4.5",
     "front-matter": "^4.0.2",
     "isbot": "^4.1.0",
