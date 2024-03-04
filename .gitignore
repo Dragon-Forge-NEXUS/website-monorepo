@@ -1,0 +1,26 @@
+# production:
+# build output
+production/dist/
+
+# generated types
+production/.astro/
+
+# logs
+production/npm-debug.log*
+production/yarn-debug.log*
+production/yarn-error.log*
+production/pnpm-debug.log*
+
+# macOS-specific files
+production/.DS_Store
+
+# Nightly:
+
+nightly/.cache
+nightly/build
+nightly/public/build
+
+# common:
+*/node_modules
+*/.env
+*/.env.production
