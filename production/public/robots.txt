@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nightly.dragonforgenexus.xyz/sitemap-index.xml
