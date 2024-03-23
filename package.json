@@ -1,9 +1,0 @@
-{
-  "name": "dfn_monorepo",
-  "type": "module",
-  "version": "1.2.2",
-  "scripts": {
-    "update": "bash update-all.sh",
-    "update.win": "update-all.bat"
-  }
-}
