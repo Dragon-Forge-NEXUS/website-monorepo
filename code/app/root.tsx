@@ -9,7 +9,7 @@ import {
   useRouteError,
   isRouteErrorResponse,
 } from "@remix-run/react";
-import stylesheet from "~/styles/tailwind.css";
+import stylesheet from "~/styles/tailwind.css?url";
 import { canUseDOM } from "./ui/primitives/utils";
 import { Footer } from "~/ui/footer";
 // import { Header } from "./ui/header";
