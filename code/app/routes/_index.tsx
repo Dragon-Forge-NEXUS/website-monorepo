@@ -50,7 +50,7 @@ export default function Index() {
           <div className="timeline-end mb-10">
             <time className="font-mono italic">6/1/2024</time>
             <div className="text-lg font-black">More Guides and Tutorials</div>
-            This launch will include Astro, Tailwind, Bootstrap, TS, and our first tools!
+            This launch will include Astro, Tailwind, Bootstrap, TS, and our first tools! this is to be the biggest update of the year after the release.
           </div>
           <hr />
         </li>

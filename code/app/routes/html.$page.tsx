@@ -10,7 +10,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const filePath = "/md/html/index.md";
+  const filePath = `/md/html/index.md`;
   const [markdownContent, setMarkdownContent] = useState<string>('');
 
   useEffect(() => {
