@@ -42,7 +42,9 @@ export default function App() {
           <div className="drawer-side">
             <label htmlFor="categories" aria-label="close sidebar" className="drawer-overlay"></label>
             <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-              <li><a href="/html">HTML</a></li>
+              DFC
+              <li><a href="https://blog.dragonforgenexus.xyz/category/code/">Blog</a></li>
+              {/* <li><a href="/html">HTML</a></li> */}
             </ul>
           </div>
         </div>
