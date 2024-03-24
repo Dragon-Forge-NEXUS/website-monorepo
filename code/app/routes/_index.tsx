@@ -9,26 +9,26 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="container mx-auto p-5">
-      <h1 className="text-5xl text-dragonforge-code text-shadow">DragonForgeCode</h1>
+    <div className="container mx-auto m-5 prose">
+      <h1>DragonForgeCode</h1>
       <p>By DragonForgeNEXUS</p>
       <hr />
       <br />
-      <h2 className="text-xl">DragonForgeCode: Why Not W3Schools or Another Alternative?</h2>
-      <p>Use them! They are amazing tools. The only reason this exists is because of the ads on the other sites. DragonForgeCode will <span className="text-red-500">never have ads</span>.</p>
-      <p>DragonForgeCode is also open-source (OSS) under the MIT License, meaning that if something is off, <span className="text-blue-500">you</span> can make a PR to fix it, or create an issue on GitHub.</p>
+      <h2>DragonForgeCode: Why Not W3Schools or Another Alternative?</h2>
+      <p>Use them! They are amazing tools. The only reason this exists is because of the ads on the other sites. DragonForgeCode will <code className="text-red-500">never have ads</code>.</p>
+      <p>DragonForgeCode is also open-source (OSS) under the MIT License, meaning that if something is off, you can make a PR to fix it, or create an issue on GitHub.</p>
       <hr />
       <br />
-      <h2 className="text-xl">Features</h2>
-      <h3 className="text-lg">Apps</h3>
+      <h2>Features</h2>
+      <h3>Apps</h3>
       <p>DragonForgeCode will have an app available shortly after release. You may also use PWA to use this site as an app on release (technically now if you want to!).</p>
-      <h3 className="text-lg">EDU Version</h3>
+      <h3>EDU Version</h3>
       <p>If you&apos;re a teacher and want DragonForgeCode to be usable in class, we will be launching with an EDU version of the site that has no external links and uses our own video hosting.</p>
-      <h3 className="text-lg">Open Source Software (OSS)</h3>
+      <h3>Open Source Software (OSS)</h3>
       <p>DragonForgeCode is and will be fully open-source under the MIT license. The only thing that won&apos;t be will be the app&apos;s code.</p>
       <hr />
       <br />
-      <h2 className="text-xl">What to Expect</h2>
+      <h2>What to Expect</h2>
       <p>Along with the above, we will be launching with HTML, CSS, and JS on day one. Below are our current plans.</p>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>

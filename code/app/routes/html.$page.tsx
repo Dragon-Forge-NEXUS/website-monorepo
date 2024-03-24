@@ -1,16 +1,20 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Markdown } from "~/ui/markdown";
 import { useEffect, useState } from "react";
+import { redirect, useParams } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { page } = useParams();
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: `HTML ${page} | DFC` },
+    { name: "description", content: `Welcome to DragonForgeCode! HTML ${page}` },
   ];
 };
 
 export default function Index() {
-  const filePath = `/md/html/index.md`;
+  const { page } = useParams();
+  const filePath = `/md/html/${page?.toLowerCase()}.md`;
   const [markdownContent, setMarkdownContent] = useState<string>('');
 
   useEffect(() => {
@@ -26,8 +30,12 @@ export default function Index() {
         console.error('Error fetching Markdown content:', error);
       }
     }
-    fetchMarkdownContent();
-  }, [filePath]);
+    if (page?.toLowerCase() === 'home' || page?.toLowerCase() === 'index') {
+      redirect("/html");
+    }else{
+      fetchMarkdownContent();
+    }
+  }, [filePath, page]);
   return (
     <div>
       <Markdown content={markdownContent} />

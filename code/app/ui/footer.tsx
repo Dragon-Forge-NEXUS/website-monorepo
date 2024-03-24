@@ -4,7 +4,7 @@ export function Footer(){
   return(
     <footer className="footer p-10 bg-base-200 text-base-content">
       <aside>
-        <img src="/imgs/Logos/Square/Clear - white/250/DRAGONFORGENEXUS.png" height="90rem" width="90rem" alt=""/>
+        <img src="/imgs/Logos/Square/Clear - white/250/DRAGONFORGECODE-flat.png" height="90rem" width="90rem" alt=""/>
         <p>DragonForgeCode</p>
         <div className="text-slate-700">Website version: <Version /></div>
       </aside> 

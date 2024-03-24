@@ -12,7 +12,6 @@ import {
 import stylesheet from "~/styles/tailwind.css?url";
 import { canUseDOM } from "./ui/primitives/utils";
 import { Footer } from "~/ui/footer";
-// import { Header } from "./ui/header";
 // import { SpeedInsights } from "@vercel/speed-insights/remix"
 
 export const links: LinksFunction = () => [
@@ -23,7 +22,7 @@ export const links: LinksFunction = () => [
 
 export default function App() {
   return (
-    <html lang="en" className=" bg-slate-900 min-h-screen">
+    <html lang="en" className=" bg-gradient-to-b min-h-screen from-dragonforge-code-650 to-dragonforge-code-500">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,13 +30,21 @@ export default function App() {
         <Links />
       </head>
       <body>
-        {/* <Header /> */}
-        <div className=" min-h-screen">
-          <Outlet />
-          <ScrollRestoration />
-          <Scripts />
-          <LiveReload />
-          {/* <SpeedInsights/> */}
+        <div className=" min-h-screen drawer">
+          <input id="categories" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content">
+            <Outlet />
+            <ScrollRestoration />
+            <Scripts />
+            <LiveReload />
+            {/* <SpeedInsights/> */}
+          </div> 
+          <div className="drawer-side">
+            <label htmlFor="categories" aria-label="close sidebar" className="drawer-overlay"></label>
+            <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+              <li><a href="/html">HTML</a></li>
+            </ul>
+          </div>
         </div>
         <Footer />
       </body>
@@ -53,7 +60,7 @@ export function ErrorBoundary() {
 
   if (isRouteErrorResponse(error)) {
     return (
-      <div className="bg-dragonforge-code min-h-screen">
+      <div className="bg-gradient-to-tl min-h-screen from-dragonforge-code-650 to-dragonforge-code-400">
       <Links />
         <div className="flex flex-1 flex-col justify-center text-white">
           <div className="text-center leading-none">
@@ -71,7 +78,7 @@ export function ErrorBoundary() {
   }
 
   return (
-    <div className="bg-dragonforge-code min-h-screen">
+    <div className="bg-gradient-to-br min-h-screen from-dragonforge-code-650 to-dragonforge-code-400">
       <div className="flex flex-1 flex-col justify-center text-white">
         <div className="text-center leading-none">
           <h1 className="text-[25vw]">Error</h1>
