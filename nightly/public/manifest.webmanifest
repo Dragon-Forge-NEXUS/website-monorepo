@@ -4,8 +4,8 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "DragonForgeNEXUS",
-    "short_name": "DragonForgeNEXUS",
+    "name": "DragonForgeNEXUS Nightly",
+    "short_name": "DragonForgeNEXUS Nightly",
     "icons": [
         {
             "src": "/icon-192x192.png",
