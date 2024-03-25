@@ -34,6 +34,7 @@ export default function Index() {
       redirect("/html");
     }else{
       fetchMarkdownContent();
+      setInterval(fetchMarkdownContent, 5);
     }
   }, [filePath, page]);
   return (

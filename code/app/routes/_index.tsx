@@ -22,6 +22,7 @@ export default function Index() {
         <h2>DragonForgeCode: Why Not W3Schools or Another Alternative?</h2>
         <p>Use them! They are amazing tools. The only reason this exists is because of the ads on the other sites. DragonForgeCode will <code className="text-red-500">never have ads</code>.</p>
         <p>DragonForgeCode is also open-source (OSS) under the MIT License, meaning that if something is off, you can make a PR to fix it, or create an issue on GitHub.</p>
+        <p>DragonForgeCode is also built off of the infromation on those sites, you will see a lot of the same setup as sites like W3Schools. As we expand working and setup will be changing a lot.</p>
         <hr />
         <br />
         <h2>Features</h2>
@@ -67,7 +68,7 @@ export default function Index() {
             <div className="timeline-start md:text-end mb-10">
               <time className="font-mono italic">TBD</time>
               <div className="text-lg font-black">App Release</div>
-              We will be releasing the app for this site on a date that is TBD.
+              We will be releasing the app for this site on a date that is TBD. Please use the PWA feature to install this site.
             </div>
             <hr />
           </li>

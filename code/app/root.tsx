@@ -43,7 +43,7 @@ export default function App() {
             <label htmlFor="categories" aria-label="close sidebar" className="drawer-overlay"></label>
             <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
               DFC
-              <li><a href="https://blog.dragonforgenexus.xyz/category/code/">Blog</a></li>
+              <li><a href="https://blog.dragonforgenexus.xyz/category/code/" className="after:content-['_↗']">Blog</a></li>
               {/* <li><a href="/html">HTML</a></li> */}
             </ul>
           </div>
