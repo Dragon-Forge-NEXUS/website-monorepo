@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 let allPosts = await getCollection("blog");
 allPosts = allPosts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
-let newestPost = allPosts?.[0] || {};
+let newestPost = allPosts![0];
 import BlogPost from "../blog/blogpost.astro";
 ---
 <div class="drawer">
