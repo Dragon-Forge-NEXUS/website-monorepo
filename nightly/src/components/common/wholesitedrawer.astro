@@ -25,7 +25,7 @@ import BlogPost from "../blog/blogpost.astro";
       Socials
       <li><a class="after:content-['_↗']" href="https://twitter.com/@DRAGONFNEXUS">Twitter/X</a></li>
       <li><a class="after:content-['_↗']" rel="me" href="https://mastodon.social/@DRAGONFORGENEXUS">Mastodon</a></li>
-      <BlogPost url={"/blog/posts/" + newestPost.slug} title={newestPost.data.title} image={newestPost.data.image} date={newestPost.data.pubDate} author={newestPost.data.author} description={newestPost.data.description}/>
+      <BlogPost url={"/blog/posts/" + newestPost!.slug} title={newestPost!.data.title} image={newestPost!.data.image} date={newestPost!.data.pubDate} author={newestPost!.data.author} description={newestPost!.data.description}/>
     </ul>
   </div>
 </div>

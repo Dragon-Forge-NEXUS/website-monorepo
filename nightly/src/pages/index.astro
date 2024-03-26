@@ -27,6 +27,6 @@ let newestPost = allPosts![0];
       </a>
     </div>
 		<h2 class="text-center text-2xl">Newest Blog post</h2>
-    <BlogPost url={"/blog/posts/" + newestPost.slug} title={newestPost.data.title} image={newestPost.data.image} date={newestPost.data.pubDate} author={newestPost.data.author} description={newestPost.data.description}/>
+    <BlogPost url={"/blog/posts/" + newestPost!.slug} title={newestPost!.data.title} image={newestPost!.data.image} date={newestPost!.data.pubDate} author={newestPost!.data.author} description={newestPost!.data.description}/>
 	</main>
 </Layout>
