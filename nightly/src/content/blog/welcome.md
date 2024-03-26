@@ -2,7 +2,7 @@
 title: "Welcome to DragonForgeNEXUS"
 pubDate: 2023-11-12
 description: "Welcome to the NEXUS"
-author: "altie"
+author: "Altie"
 image:
   url: "/imgs/blog/welcome/thumbnail.jpg"
   alt: "DragonForgeNEXUS Banner"

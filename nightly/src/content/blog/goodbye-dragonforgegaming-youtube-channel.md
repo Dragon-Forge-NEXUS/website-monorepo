@@ -2,7 +2,7 @@
 title: "Goodbye to the DragonForgeGaming Youtube Channel"
 pubDate: 2023-11-30
 description: "Say goodbye to the DragonForgeGaming Youtube Channel"
-author: "altie"
+author: "Altie"
 image:
   url: "/imgs/blog/goodbye-youtube-channel/thumbnail.jpg"
   alt: "DragonForgeMedia Banner"

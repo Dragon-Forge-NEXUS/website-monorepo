@@ -2,7 +2,7 @@
 title: "DragonForgeGaming release info"
 pubDate: 2024-01-09
 description: "Information on DragonForgeGaming's release"
-author: "altie"
+author: "Altie"
 image:
   url: "/imgs/blog/gaming-release-info/thumbnail.jpg"
   alt: "DragonForgeGaming Banner"

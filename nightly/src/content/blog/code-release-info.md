@@ -2,7 +2,7 @@
 title: "DragonForgeCode release info"
 pubDate: 2024-01-09
 description: "Information on DragonForgeCode's release"
-author: "altie"
+author: "Altie"
 image:
   url: "/imgs/blog/code-release-info/thumbnail.jpg"
   alt: "DragonForgeCode Banner"

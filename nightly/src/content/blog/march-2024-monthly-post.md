@@ -2,7 +2,7 @@
 title: "DragonForgeNEXUS' Monthly Post - March 2024"
 pubDate: 2024-03-01
 description: "DragonForgeNEXUS' March 2024 Monthly Blog Post"
-author: "altie"
+author: "Altie"
 image:
   url: "/imgs/blog/march-2024-monthly-post/thumbnail.jpg"
   alt: "DragonForgeNEXUS Banner"

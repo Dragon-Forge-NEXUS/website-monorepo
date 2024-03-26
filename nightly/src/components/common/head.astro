@@ -8,9 +8,8 @@ export interface Props {
 }
 const { title, description, icon, banner, page } = Astro.props;
 // domain
-const domain = 'https://dragonforgenexus.xyz'
-// make full domain -> banner image path
-const link_banner = domain + {banner}
+const domain = String(Astro.site)
+const banner_formatted = banner.startsWith('/') ? banner.slice(1) : banner;
 import { ViewTransitions } from 'astro:transitions';
 ---
 <!-- DO NOT ADD THE HEAD TAG -->
@@ -28,7 +27,7 @@ import { ViewTransitions } from 'astro:transitions';
 <meta property="og:type" content="website">
 <meta property="og:url" content={page}>
 <meta property="og:title" content={title}>
-<meta property="og:image" content={link_banner}>
+<meta property="og:image" content={domain + banner_formatted}>
 <meta property="og:description" content={description}>
 <meta property="og:site_name" content="DRAGONFORGENEXUS">
 <meta property="og:locale" content="en_US">
@@ -41,10 +40,10 @@ import { ViewTransitions } from 'astro:transitions';
 <meta name="twitter:url" content={page}>
 <meta name="twitter:title" content={title}>
 <meta name="twitter:description" content={description}>
-<meta name="twitter:image" content={link_banner}>
+<meta name="twitter:image" content={domain + banner_formatted}>
 <!-- apple -->
 <link rel="apple-touch-icon" href={icon}>
-<link rel="apple-touch-startup-image" href={banner}>
+<link rel="apple-touch-startup-image" href={domain + banner_formatted}>
 <meta name="apple-mobile-web-app-title" content={title}>
 <!-- View transitions -->
 <ViewTransitions />

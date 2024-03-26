@@ -2,7 +2,7 @@
 title: "FYTS Year Recap"
 pubDate: 2023-12-27
 description: "FYTS Year Recap and New Reward"
-author: "altie"
+author: "Altie"
 image:
   url: "/imgs/blog/new-fyts-reward-and-recap/thumbnail.jpg"
   alt: "DragonForgeNEXUS Banner"

@@ -8,7 +8,6 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: 'https://nightly.dragonforgenexus.xyz',
   prefetch: {
-    defaultStrategy: 'viewport',
     prefetchAll: true
   },
   integrations: [sitemap(), tailwind()],

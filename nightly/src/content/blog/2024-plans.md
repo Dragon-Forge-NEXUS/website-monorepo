@@ -2,7 +2,7 @@
 title: "DragonForgeNEXUS' 2024 Plans"
 pubDate: 2024-01-05
 description: "DragonForgeNEXUS' 2024 plans and roadmap"
-author: "altie"
+author: "Altie"
 image:
   url: "/imgs/blog/2024-plans/thumbnail.jpg"
   alt: "DragonForgeNEXUS Banner"
