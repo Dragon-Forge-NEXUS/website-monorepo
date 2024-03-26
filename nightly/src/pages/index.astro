@@ -4,7 +4,7 @@ import Layout from '../layouts/main.astro';
 import BlogPost from "../components/base/blogpost.astro";
 let allPosts = await getCollection("blog");
 allPosts = allPosts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
-let newestPost = allPosts[0];
+let newestPost = allPosts ? allPosts[0] : null;
 ---
 
 <Layout title="DragonForgeNEXUS" description="">
