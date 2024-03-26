@@ -1,25 +1,32 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from '../layouts/main.astro';
+import BlogPost from "../components/base/blogpost.astro";
+let allPosts = await getCollection("blog");
+allPosts = allPosts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+let newestPost = allPosts[0];
 ---
 
 <Layout title="DragonForgeNEXUS" description="">
 	<main>
-		<!-- <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-sky-800 duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
-      <a href="/dfm">
-        <div class="text-2xl">DragonForgeMedia</div>
-        <div>DragonForgeMedia is a small media studio that makes youtube videos, twitch streams and more social media based stuff.</div>
+		<div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-code duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+      <a href="https://code.dragonforgenexus.xyz">
+        <div class="text-2xl after:content-['_↗']">DragonForgeCode</div>
+        <div>DragonforgeCode has multible subpages including: Code Tutorials, Code Librarys, And more!</div>
       </a>
-    </div> -->
-    <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-[#3f6212] duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+    </div>
+    <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-nexus duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
       <a href="/blog">
         <div class="text-2xl">DragonForgeNEXUS Blog</div>
       </a>
     </div>
-    <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-[#3f6212] duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+    <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-nexus duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
       <a href="/partners">
         <div class="text-2xl">DragonForgeNEXUS&apos; Partners</div>
         <div>DragonForgeNEXUS&apos; Partnerships.</div>
       </a>
     </div>
+		<h2 class="text-center text-2xl">Newest Blog post</h2>
+    <BlogPost url={"/blog/posts/" + newestPost.slug} title={newestPost.data.title} image={newestPost.data.image} date={newestPost.data.pubDate} author={newestPost.data.author} description={newestPost.data.description}/>
 	</main>
 </Layout>
