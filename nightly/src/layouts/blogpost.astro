@@ -7,11 +7,12 @@ import Head from '../components/common/head.astro';
 import Drawer from '../components/common/wholesitedrawer.astro';
 import Header from '../components/base/header.astro';
 const { frontmatter } = Astro.props;
+const title = frontmatter.data.title + " | DragonForgeNEXUS' Blog"
 ---
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark" class="bg-slate-900 " transition:animate="slide">
 	<head>
-		<Head title={frontmatter.data.title} description={frontmatter.data.description} icon="/imgs/Logos/Square/Solid/250/PNG/DRAGONFORGENEXUS.png" banner={String(frontmatter.data.image.url)} page={canonicalURL}/>
+		<Head title={title} description={frontmatter.data.description} icon="/imgs/Logos/Square/Solid/250/PNG/DRAGONFORGENEXUS.png" banner={String(frontmatter.data.image.url)} page={canonicalURL}/>
 	</head>
 	<body>
 		<Header />
@@ -23,6 +24,13 @@ const { frontmatter } = Astro.props;
       <p>Written by: {frontmatter.data.author}</p>
       <slot />
     </div>
+    <script src="https://utteranc.es/client.js"
+        repo="Dragon-Forge-NEXUS/Blog-Comments"
+        issue-term="title"
+        theme="icy-dark"
+        crossorigin="anonymous"
+        async>
+    </script>
     </Drawer>
     <Footer />
   </body>
