@@ -45,6 +45,5 @@ http://www.google.com/bot.html
 
 Concluding, the primary objective of this communication is to elucidate our 404 reporting mechanism. It's imperative to note that there's no necessity for you to report in any Discord channels, as we capture all routes comprehensively.
 
-Sincerely,  
 Altie  
 Head Dragon, DragonForgeNEXUS
