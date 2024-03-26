@@ -5,7 +5,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 import Footer from '../components/common/footer.astro';
 import Head from '../components/common/head.astro';
 import Drawer from '../components/common/wholesitedrawer.astro';
-import Header from '../components/base/header.astro';
+import Header from '../components/blog/blogpostheader.astro';
 const { frontmatter } = Astro.props;
 const title = frontmatter.data.title + " | DragonForgeNEXUS' Blog"
 ---
