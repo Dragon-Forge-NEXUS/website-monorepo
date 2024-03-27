@@ -1,28 +1,21 @@
 import { defineConfig } from 'astro/config';
 import sitemap from "@astrojs/sitemap";
-import tailwind from '@astrojs/tailwind';
-import mdx from "@astrojs/mdx";
+import tailwind from "@astrojs/tailwind";
+import vercel from "@astrojs/vercel/serverless";
 
-import webmanifest from "astro-webmanifest";
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://dragonforgenexus.xyz',
-  redirects: {
-    '/DragonForgeMedia/DragonForgeGaming': '/Partners/FYTS'
+  site: 'https://www.dragonforgenexus.xyz',
+  prefetch: {
+    prefetchAll: true
   },
-  integrations: [
-  // ...
-  sitemap({
-    filter: page => page !== 'https://dragonforgenexus.xyz/DragonForgeGaming' && page !== 'https://dragonforgenexus.xyz/DRAGONFORGENETWORK'
-  }), tailwind(), mdx(), webmanifest({
-    name: 'DragonForgeNEXUS',
-    icon: '/imgs/Logos/Square/Solid/SVG/DRAGONFORGENEXUS.svg',
-    short_name: 'DFN',
-    description: 'DragonForgeNEXUS',
-    start_url: '/',
-    theme_color: '#3f6212',
-    background_color: '#3f6212',
-    display: 'standalone',
-  }),]
+  integrations: [sitemap(), tailwind(), mdx()],
+  output: "server",
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true
+    }
+  })
 });

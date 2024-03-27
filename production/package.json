@@ -1,26 +1,28 @@
 {
-  "name": "",
+  "name": "dfn-nightly",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.1.5",
-    "@astrojs/rss": "^4.0.0",
-    "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.3",
-    "@babel/traverse": "^7.23.5",
-    "astro": "^3.6.4",
-    "astro-webmanifest": "^1.0.0",
-    "dotenv": "^16.3.1",
-    "postcss": "^8.4.31"
-  },
-  "devDependencies": {
-    "daisyui": "^4.4.19"
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/mdx": "^2.2.2",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^7.4.0",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "astro": "^4.5.9",
+    "axios": "^1.6.8",
+    "daisyui": "^4.8.0",
+    "discord.js": "^14.14.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.3"
   }
 }
