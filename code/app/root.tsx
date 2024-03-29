@@ -16,13 +16,16 @@ import { Footer } from "~/ui/footer";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
-  { rel:"manifest", href:"/manifest.webmanifest" },
-  { rel:"sitemap", href:"/sitemap-index.xml" }, // Generate the sitemap with https://www.xml-sitemaps.com then update sitemap.xml NOT sitemap-index.xml
+  { rel: "manifest", href: "/manifest.webmanifest" },
+  { rel: "sitemap", href: "/sitemap-index.xml" }, // Generate the sitemap with https://www.xml-sitemaps.com then update sitemap.xml NOT sitemap-index.xml
 ];
 
 export default function App() {
   return (
-    <html lang="en" className=" bg-gradient-to-b min-h-screen from-dragonforge-code-650 to-dragonforge-code-500">
+    <html
+      lang="en"
+      className=" bg-gradient-to-b min-h-screen from-dragonforge-code-650 to-dragonforge-code-500"
+    >
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,12 +41,23 @@ export default function App() {
             <Scripts />
             <LiveReload />
             {/* <SpeedInsights/> */}
-          </div> 
+          </div>
           <div className="drawer-side">
-            <label htmlFor="categories" aria-label="close sidebar" className="drawer-overlay"></label>
+            <label
+              htmlFor="categories"
+              aria-label="close sidebar"
+              className="drawer-overlay"
+            ></label>
             <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
               DFC
-              <li><a href="https://blog.dragonforgenexus.xyz/category/code/" className="after:content-['_↗']">Blog</a></li>
+              <li>
+                <a
+                  href="https://blog.dragonforgenexus.xyz/category/code/"
+                  className="after:content-['_↗']"
+                >
+                  Blog
+                </a>
+              </li>
               {/* <li><a href="/html">HTML</a></li> */}
             </ul>
           </div>
@@ -63,7 +77,7 @@ export function ErrorBoundary() {
   if (isRouteErrorResponse(error)) {
     return (
       <div className="bg-gradient-to-tl min-h-screen from-dragonforge-code-650 to-dragonforge-code-400">
-      <Links />
+        <Links />
         <div className="flex flex-1 flex-col justify-center text-white">
           <div className="text-center leading-none">
             <h1 className="font-mono text-[25vw]">{error.status}</h1>
@@ -89,6 +103,6 @@ export function ErrorBoundary() {
           </div>
         </div>
       </div>
-      </div>
+    </div>
   );
 }

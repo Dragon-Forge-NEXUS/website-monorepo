@@ -24,3 +24,8 @@ nightly/public/build
 */node_modules
 */.env
 */.env.production
+
+# base
+/node_modules
+.env
+.env.production

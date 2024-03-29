@@ -15,15 +15,15 @@ const blogCollection = defineCollection({
 });
 
 const authorsCollection = defineCollection({
-  type: 'data',
+  type: "data",
   schema: z.object({
     name: z.string(),
     pfp: z.string().url(),
     signature: z.string(),
-  })
+  }),
 });
 
 export const collections = {
-  'blog': blogCollection,
-  'authors': authorsCollection,
+  blog: blogCollection,
+  authors: authorsCollection,
 };

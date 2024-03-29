@@ -45,7 +45,7 @@ click file > new file to make a new file name the file "`index.htm`" (you can us
 Type or copy the following code into VSCode:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <body>
     <h1>My First Heading</h1>

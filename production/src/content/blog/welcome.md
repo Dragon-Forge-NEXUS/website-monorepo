@@ -24,6 +24,7 @@ Why not, right? Dragons are legendary, fierce, and downright cool. And a forge? 
 Hold onto your hats because we're about to drop some mind-blowing news. First off, we're unleashing a brand-new Code doc site[^1]!
 
 **Dive Deeper:**
+
 - Curious about our secret plans? Check out the [Google Sheet](https://docs.google.com/document/d/1UrTlVajTcmGQ082CBE_Ew3X3SItx4RQd-fi632ExSv0/edit?usp=sharing) where we spill the beans on upcoming projects, entities, and maybe a bit of chaos.
 - Ready for a wild ride? Join the madness on our [Discord](https://discord.dovahkiin.xyz). Trust us; it's where the real fun happens.
 

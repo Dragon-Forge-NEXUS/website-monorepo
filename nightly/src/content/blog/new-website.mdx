@@ -9,12 +9,13 @@ image:
 tags: ["The NEXUS"]
 ---
 
-import Wsdbtn from '../../components/common/wsdbtn.astro';
-import BlogTags from '../../components/blog/tags.astro';
+import Wsdbtn from "../../components/common/wsdbtn.astro";
+import BlogTags from "../../components/blog/tags.astro";
 
 To begin, this blog post will be different than normal. We will include buttons and working examples of each feature we talk about.
 
 ## Navigation
+
 From the last site to this one, the navigation has undergone significant changes!
 
 ### The Pages Button
@@ -54,7 +55,13 @@ I just covered the tags as they appear on the landing page. When you click on on
 You're currently on one! The navigation is almost the same as usual, with this additional button:
 
 <a class="btn btn-ghost btn-circle avatar" href="/blog">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 rounded-full fill-current"><path d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z"/></svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+    class="w-5 rounded-full fill-current"
+  >
+    <path d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z" />
+  </svg>
 </a>
 
 This button is located in the top left corner of the navigation bar and directs to /blog, making it easier to return to the blog landing page from a blog post.
@@ -67,10 +74,28 @@ Here's what the page-to-page navigation looks like:
 
 <div class="dropdown">
   <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-5 w-5"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h7"
+      />
+    </svg>
   </div>
-  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-    <li><a href="/partners/fyts">FYTS</a></li>
+  <ul
+    tabindex="0"
+    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+  >
+    <li>
+      <a href="/partners/fyts">FYTS</a>
+    </li>
     {/* <li><a>Portfolio</a></li>
     <li><a>About</a></li> */}
   </ul>
@@ -84,11 +109,21 @@ This navigation menu is positioned on the left side of the navigation bar.
 
 This site runs on an exciting tech stack:
 
-- <a href="https://astro.build" class="after:content-['_↗']">AstroJS</a>
-- <a href="https://tailwindcss.com" class="after:content-['_↗']">TailwindCSS</a>
-- <a href="https://daisyui.com" class="after:content-['_↗']">DaisyUI</a>
-- <a href="https://utteranc.es" class="after:content-['_↗']">utteranc.es</a> (Blog comments [try it below!])
-- <a href="https://vercel.com" class="after:content-['_↗']">Vercel</a> (Hosting)
+- <a href="https://astro.build" class="after:content-['_↗']">
+    AstroJS
+  </a>
+- <a href="https://tailwindcss.com" class="after:content-['_↗']">
+    TailwindCSS
+  </a>
+- <a href="https://daisyui.com" class="after:content-['_↗']">
+    DaisyUI
+  </a>
+- <a href="https://utteranc.es" class="after:content-['_↗']">
+    utteranc.es
+  </a> (Blog comments [try it below!])
+- <a href="https://vercel.com" class="after:content-['_↗']">
+    Vercel
+  </a> (Hosting)
 
 Before the end of the year, we plan to move away from DaisyUI and create our own UI elements!
 
@@ -97,12 +132,14 @@ Before the end of the year, we plan to move away from DaisyUI and create our own
 ## What's Coming, What's Going?
 
 ### Leaving
+
 - blog.dragonforgenexus.xyz
   - This is the new blog. We will be redirecting the domain to this blog.
 - Media Page (Temp)
   - We currently don't have anything to put on the page, so for the moment, DFM is going away.
 
 ### Coming
+
 - code.dragonforgenexus.xyz (launching 4/11/2024)
   - DragonForgeCode is launching very soon! You can visit the current site <a href="https://code.dragonforgenexus.xyz" class="after:content-['_↗']">here</a>.
 

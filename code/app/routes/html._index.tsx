@@ -11,19 +11,19 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   const filePath = "/md/html/index.md";
-  const [markdownContent, setMarkdownContent] = useState<string>('');
+  const [markdownContent, setMarkdownContent] = useState<string>("");
 
   useEffect(() => {
     async function fetchMarkdownContent() {
       try {
         const response = await fetch(filePath);
         if (!response.ok) {
-          throw new Error('Failed to fetch Markdown content');
+          throw new Error("Failed to fetch Markdown content");
         }
         const content = await response.text();
         setMarkdownContent(content);
       } catch (error) {
-        console.error('Error fetching Markdown content:', error);
+        console.error("Error fetching Markdown content:", error);
       }
     }
     fetchMarkdownContent();
