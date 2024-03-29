@@ -1,3 +1,3 @@
 # website-monorepo
 
-Monorepo for all of our websites (Prod and bata/nightly)
+Monorepo for all of our websites (Prod and beta/nightly)
