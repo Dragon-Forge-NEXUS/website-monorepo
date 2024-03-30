@@ -5,37 +5,16 @@ export interface Props {
 }
 
 const { title, description } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Imports
 import Footer from '../components/common/footer.astro';
-import Head from '../components/common/head.astro';
-import Drawer from '../components/common/wholesitedrawer.astro';
-import Header from '../components/base/header.astro';
+import Header from '../components/home/header.astro';
+import Layout from './base.astro';
 ---
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark" class="bg-slate-900 " transition:animate="slide">
-	<head>
-		<Head title={title} description={description} icon="/imgs/Logos/Square/Solid/250/PNG/DRAGONFORGENEXUS.png" banner="/imgs/Logos/Banner/Solid/1000x500/PNG/DRAGONFORGENEXUS-solid-banner.png" page={canonicalURL}/>
-	</head>
-	<body>
-		<Header />
-		<Drawer>
+<Layout title={title} description={description} banner="/imgs/Logos/Banner/Solid/1000x500/PNG/DRAGONFORGENEXUS-solid-banner.png" icon="/imgs/Logos/Square/Solid/250/PNG/DRAGONFORGENEXUS.png">
+	<Header />
+		<div class=" min-h-screen">
 			<slot />
-		</Drawer>
-		<Footer />
-	</body>
-</html>
-
-<!-- 
-    .--.    
-   |o_o |   
-   |:_/ |    
-  //   \ \   
- (|     | )  
-/'\_   _/`\  
-\___)=(___/
-
-Hey there! I'm a friendly penguin hiding in your code. 🐧
-Feel free to say hello if you find me! 😄
--->
+		</div>
+	<Footer />
+</Layout>

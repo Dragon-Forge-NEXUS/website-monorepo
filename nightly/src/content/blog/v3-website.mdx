@@ -1,0 +1,119 @@
+---
+title: "New Website"
+pubDate: 2024-04-11
+description: "Information on DragonForgeNEXUS' new website mostly covering navigation."
+author: "Altie"
+image:
+  url: "/imgs/blog/v3-website/thumbnail.jpg"
+  alt: "DragonForgeNEXUS v3 website Banner"
+tags: ["The NEXUS"]
+---
+
+import BlogTags from "../../components/blog/tags.astro";
+import Pages from "../../components/react/common/pages";
+
+To begin, this blog post will be different than normal. We will include buttons and working examples of each feature we talk about. This will repeat a lot of the wording and order of the version 2 launch. We apologize for any inconvenience caused.
+
+## Colors
+
+We now have a light and dark mode! Currently, it is based on your (device's) preferred mode. However, this blog will always be in light mode. We apologize for any inconvenience caused.
+
+## Navigation
+
+From the last site to this one, the navigation has undergone significant changes! Many of the previous site's changes have changed again, so please read through for all of the updates.
+
+### The Pages Button
+
+On the left side of the navigation bar, you will now find this button:
+
+<Pages client:load />
+
+This will open up the navigation popout. Give it a try! Press the button right above this text to see it in action!
+
+This popout contains links to every home page, Discord servers, and our socials.
+
+This will also serve as the site-to-site navigation!
+
+(Note: This example is being affected by the way the blog is formatted. For the true look, press the 'pages' button in the navbar. ^\_^)
+
+### The NEXUS
+
+You most likely arrived at the blog from The NEXUS, which serves as the landing page for the entire site. It has links to every major page, and this page has not changed much at all from V2.
+
+### Blog
+
+This section encompasses various navigation elements, most of which are unchanged from V2.
+
+#### The Blog Landing
+
+On the landing page of the blog, you will find a list of every blog post, ordered from the latest to the oldest.
+
+On the Blog landing page, you will encounter this:
+
+<BlogTags />
+
+These are the blog tags or categories. Each blog post is assigned one or more tags.
+
+#### The Blog Tags
+
+I just covered the tags as they appear on the landing page. When you click on one of the tags, you will see all the blog posts categorized under that tag, from the latest to the oldest.
+
+#### The Blog Page
+
+You're currently on one! The navigation is almost the same as usual, with this additional button:
+
+<a class="btn btn-ghost btn-circle avatar" href="/blog">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+    class="w-5 rounded-full fill-current"
+  >
+    <path d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z" />
+  </svg>
+</a>
+
+This button is located in the top left corner of the navigation bar and directs to /blog, making it easier to return to the blog landing page from a blog post.
+
+### Page Navigation
+
+The page navigation is now a part of the above-mentioned ['pages' button](/blog/posts/v3-website#the-pages-button).
+
+---
+
+## The Nerdy Stuff
+
+The site no longer runs on <a href="https://daisyui.com" class="after:content-['_↗']">DaisyUI</a>!
+
+Here is the updated tech stack:
+
+- <a href="https://astro.build" class="after:content-['_↗']">
+    AstroJS
+  </a>
+- <a href="https://tailwindcss.com" class="after:content-['_↗']">
+    TailwindCSS
+  </a>
+- <a href="https://react.dev" class="after:content-['_↗']">
+    React
+  </a>
+- <a href="https://headlessui.com" class="after:content-['_↗']">
+    HeadlessUI
+  </a>
+- <a href="https://utteranc.es" class="after:content-['_↗']">
+    utteranc.es
+  </a> (Blog comments [try it below!])
+- <a href="https://vercel.com" class="after:content-['_↗']">
+    Vercel
+  </a> (Hosting)
+
+---
+
+## Code
+
+DragonForgeCode is finally here!
+
+And it is not on its own site now; it's all here! Head over to [this blog post](/blog/posts/code-is-here) to find out more!
+
+Gaming is still planned to launch around October, but for now, that's it. Have a good day/night!
+
+Altie  
+Head Dragon, DragonForgeNEXUS

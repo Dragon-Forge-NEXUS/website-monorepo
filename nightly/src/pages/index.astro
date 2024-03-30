@@ -1,50 +1,50 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from '../layouts/main.astro';
-import BlogPost from "../components/base/blogpost.astro";
+import BlogPost from "../components/home/blogpost.astro";
 let allPosts = await getCollection("blog");
 allPosts = allPosts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 let newestPost = allPosts![0];
 ---
 
-<Layout title="DragonForgeNEXUS" description="">
+<Layout title="DragonForgeNEXUS" description="Welcome to DragonForgeNEXUS (nightly)!">
 	<main>
-		<div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-code duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+		<div class="mx-auto w-2/3 md:w-1/2 transition ease-in-out delay-150 hover:scale-105 text-slate-800 bg-slate-400 dark:bg-slate-700 dark:text-slate-400 hover:bg-dragonforge-code duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
       <a href="https://code.dragonforgenexus.xyz">
         <div class="text-2xl after:content-['_↗']">DragonForgeCode</div>
         <div>DragonforgeCode has multible subpages including: Code Tutorials, Code Librarys, And more!</div>
       </a>
     </div>
-		{/* <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-media duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+		{/* <div class="mx-auto w-2/3 md:w-1/2 transition ease-in-out delay-150 hover:scale-105 text-slate-800 bg-slate-400 dark:bg-slate-700 dark:text-slate-400 hover:bg-dragonforge-media duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
       <a href="/dfg">
         <div class="text-2xl">DragonForgeMedia</div>
         <div>DragonForgeMEDIA is a small media studio that makes youtube videos, twitch streams and more social media based stuff.</div>
       </a>
     </div> */}
-		{/* <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-gaming duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+		{/* <div class="mx-auto w-2/3 md:w-1/2 transition ease-in-out delay-150 hover:scale-105 text-slate-800 bg-slate-400 dark:bg-slate-700 dark:text-slate-400 hover:bg-dragonforge-gaming duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
       <a href="/dfg">
         <div class="text-2xl">DragonForgeGaming</div>
         <div>DragonforgeGaming is a game reviews and news (same gaming stories as DragonForgeNews) site.</div>
       </a>
     </div> */}
-		{/* <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-news duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+		{/* <div class="mx-auto w-2/3 md:w-1/2 transition ease-in-out delay-150 hover:scale-105 text-slate-800 bg-slate-400 dark:bg-slate-700 dark:text-slate-400 hover:bg-dragonforge-news duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
       <a href="/dfg">
         <div class="text-2xl">DragonForgeNews</div>
         <div>DragonforgeNews is an article based news for gaming, tech, and media news! this does NOT include politics, and if politics is a major part of a subject (such as the 2023 KOSA[Kids online safety act]), it will be as unbiased as possible.</div>
       </a>
     </div> */}
-		{/* <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-network duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+		{/* <div class="mx-auto w-2/3 md:w-1/2 transition ease-in-out delay-150 hover:scale-105 text-slate-800 bg-slate-400 dark:bg-slate-700 dark:text-slate-400 hover:bg-dragonforge-network duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
       <a href="/dfg">
         <div class="text-2xl">DragonForgeNetwork</div>
         <div>DragonforgeNetwork is a work in progress Minecraft Network.</div>
       </a>
     </div> */}
-    <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-nexus duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+    <div class="mx-auto w-2/3 md:w-1/2 transition ease-in-out delay-150 hover:scale-105 text-slate-800 bg-slate-400 dark:bg-slate-700 dark:text-slate-400 hover:bg-dragonforge-nexus duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
       <a href="/blog">
         <div class="text-2xl">DragonForgeNEXUS Blog</div>
       </a>
     </div>
-    <div class="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-dragonforge-nexus duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+    <div class="mx-auto w-2/3 md:w-1/2 transition ease-in-out delay-150 hover:scale-105 text-slate-800 bg-slate-400 dark:bg-slate-700 dark:text-slate-400 hover:bg-dragonforge-nexus duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
       <a href="/partners">
         <div class="text-2xl">DragonForgeNEXUS&apos; Partners</div>
         <div>DragonForgeNEXUS&apos; Partnerships.</div>

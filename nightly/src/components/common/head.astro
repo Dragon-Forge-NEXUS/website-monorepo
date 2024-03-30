@@ -21,8 +21,12 @@ import { ViewTransitions } from 'astro:transitions';
 <link rel="icon" type="image/png" href={icon} />
 <meta name="generator" content={Astro.generator} />
 <title>{title}</title>
-<!-- canonical -->
+<!-- Web manifest -->
+<link rel="manifest" href="manifest.webmanifest" />
+<!-- canonical URL -->
 <link rel="canonical" href={page}>
+<!-- search engine meta -->
+<meta property="description" content={description} />
 <!-- Social meta -->
 <meta property="og:type" content="website">
 <meta property="og:url" content={page}>

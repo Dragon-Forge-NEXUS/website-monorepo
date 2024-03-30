@@ -14,6 +14,17 @@ const blogCollection = defineCollection({
   }),
 });
 
+const codeCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    tags: z.array(z.string()),
+    language: z.string(),
+    subcatagory: z.string(),
+    isreference: z.boolean(),
+  }),
+});
+
 const authorsCollection = defineCollection({
   type: "data",
   schema: z.object({
@@ -26,4 +37,5 @@ const authorsCollection = defineCollection({
 export const collections = {
   blog: blogCollection,
   authors: authorsCollection,
+  code: codeCollection,
 };
