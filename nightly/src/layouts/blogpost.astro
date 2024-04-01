@@ -16,7 +16,7 @@ const title = frontmatter.data.title + " | DragonForgeNEXUS' Blog"
       <Header />
 	  	<div class=" min-h-screen">
         <div class="prose md:prose-lg lg:prose-xl mx-auto mt-5 mb-10 px-5 md:px-0">
-          <img src={frontmatter.data.image.url} alt={frontmatter.data.image.alt} transition:name={"BlogPost" + frontmatter.data.slug}   class="w-full rounded-xl"/>
+          <img src={frontmatter.data.image.url} alt={frontmatter.data.image.alt} transition:name={"BlogPost" + frontmatter.data.slug}   class="w-full rounded-xl drop-shadow-lg"/>
           <p><em>{frontmatter.data.description}</em></p>
           <p>Written by: {frontmatter.data.author}</p>
           <p>{String(frontmatter.data.pubDate).slice(0, 15)}</p>
