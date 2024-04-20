@@ -1,6 +1,6 @@
 ---
 title: "DragonForgeCode is here!"
-pubDate: 2024-04-10
+pubDate: 2024-10-31
 description: "information on DragonForgeCode's release!"
 author: "Altie"
 image:
