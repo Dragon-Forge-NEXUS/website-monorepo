@@ -1,6 +1,6 @@
 ---
 title: "Code Launch Delay"
-pubDate: 2024-4-19
+pubDate: 2024-04-19
 description: "Code Launch Delay infromation."
 author: "Altie"
 image:
