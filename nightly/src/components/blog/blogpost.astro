@@ -1,4 +1,0 @@
----
-const { title, url, image, date, author, description } = Astro.props
----
-<div class="w-fit rounded-lg text-slate-800 bg-slate-400 dark:bg-slate-700 dark:text-slate-400 p-5 transition ease-in-out delay-150 duration-300 hover:scale-105 drop-shadow-lg"><a href={url}><img src={image.url} alt={image.alt} class=" mx-auto rounded-xl drop-shadow-lg" transition:name={"BlogPost" + url}/>{title}<span class=" float-end">{author}</span><br />{String(date).slice(0, 15)}<br /><span>{description}</span></a></div>
